@@ -1,0 +1,23 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "editorconfig-checker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsem73/travel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsem73/travel/issues"
+  },
+  "homepage": "https://github.com/gsem73/travel#readme",
+  "devDependencies": {
+    "editorconfig-checker": "^4.0.2"
+  }
+}
