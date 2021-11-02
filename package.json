@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "editorconfig-checker"
+    "test": "editorconfig-checker",
+    "html-minifier": "html-minifier --collapse-whitespace --remove-comments --input-dir source --output-dir build --file-ext html"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/gsem73/travel#readme",
   "devDependencies": {
-    "editorconfig-checker": "^4.0.2"
+    "editorconfig-checker": "^4.0.2",
+    "html-minifier": "^4.0.0"
   }
 }
