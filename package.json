@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gsem73/travel#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.7",
     "editorconfig-checker": "^4.0.2",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1"
