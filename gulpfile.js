@@ -3,6 +3,9 @@ import htmlmin from 'gulp-htmlmin';
 import sync from 'browser-sync';
 import rename from 'gulp-rename';
 import replace from 'gulp-replace';
+import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import autoprefixer from 'autoprefixer';
 
 const html = function() {
   return gulp.src('source/*.html')
@@ -17,6 +20,10 @@ const html = function() {
 
 const css = function() {
   return gulp.src('source/css/style.css')
+    .pipe(postcss([
+        autoprefixer,
+        csso,
+    ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(sync.stream());
