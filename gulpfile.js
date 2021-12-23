@@ -6,6 +6,7 @@ import replace from 'gulp-replace';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import autoprefixer from 'autoprefixer';
+import imp from 'postcss-import';
 
 const html = function() {
   return gulp.src('source/*.html')
@@ -21,6 +22,7 @@ const html = function() {
 const css = function() {
   return gulp.src('source/css/style.css')
     .pipe(postcss([
+        imp,
         autoprefixer,
         csso,
     ]))

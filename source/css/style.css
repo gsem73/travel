@@ -1,4 +1,10 @@
+@import "blocks/header.css";
+@import "blocks/footer.css";
+@import "blocks/main.css";
+
 body {
   background-color: lavender;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
